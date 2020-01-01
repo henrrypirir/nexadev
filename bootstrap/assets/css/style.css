@@ -23,6 +23,9 @@ hr{
   border-top: 3px solid var(--space-gray-color);
   margin: 2rem 0;
 }
+p{
+  text-align: justify;
+}
 .btn-primary{
   background-color: var(--sky-color);
   border-color: var(--sky-color);
@@ -33,6 +36,7 @@ hr{
 }
 .page{
   padding: 1%;
+    min-height: 100vh;
   background: url("../images/concrete_seamless.png") center center;
 }
 .container{
@@ -71,9 +75,12 @@ footer{
   font-family: var(--times-new-roman);
   background-color: var(--sky-color);
 }
-@media (min-width: 778px) {
+@media (min-width: 768px) {
   h1{
     font-size: 1.8em;
+  }
+  .img-text-left{
+    float: left;
   }
   .projects .item .title{
     position: absolute;
@@ -82,9 +89,17 @@ footer{
     bottom: 1%;
   }
 }
-@media (max-width: 778px) {
+@media (max-width: 768px) {
   ul{
     padding: 0;
     list-style: none;
+  }
+  main{margin-bottom: 20%;}
+  footer{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
   }
 }
