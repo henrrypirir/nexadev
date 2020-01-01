@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>Prueba para Nexa Devs</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <style>
+      :root{
+        --gray-color: #666;
+        --white-color: #fff;
+      }
+      .page{
+        min-height: 100vh;
+        overflow: hidden;
+      }
+      .bg{
+        padding: 1% 5%;
+        color: var(--gray-color);
+        background-color: var(--white-color);
+      }
+      .bg-gray{
+        color: var(--white-color);
+        background-color: var(--gray-color);
+      }
+      .container{
+        width: 80%;
+        margin: 0 auto;
+      }
+      .text-center{
+        text-align: center;
+      }
+      .flex-box{
+        display: flex;
+      }
+      .flex-space-between{
+        justify-content: space-between;
+      }
+      .section{
+        flex-grow: 2;
+      }
+      .sidebar{
+        flex-grow: 1;
+        margin-left: 25px;
+      }
+      header, nav,
+      .main, footer{
+        margin-top: 25px;
+      }
+      article .bg{
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page bg-gray">
+      <div class="container">
+        <header class="bg text-center">
+          <p>header</p>
+        </header>
+        <nav class="bg text-center">
+          <p>nav</p>
+        </nav>
+        <div class="main flex-box flex-space-between">
+          <section class="bg text-center section">
+            <p>section</p>
+            <article class="bg bg-gray">
+              <p>article</p>
+              <div class="bg">
+                <p>h1, h2, h3</p>
+              </div>
+              <div class="bg">
+                <p>p</p>
+              </div>
+            </article>
+          </section>
+          <aside class="bg text-center sidebar">
+            <p>aside</p>
+          </aside>
+        </div>
+        <footer class="bg text-center">
+          <p>footer</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
